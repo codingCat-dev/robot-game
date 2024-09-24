@@ -82,7 +82,7 @@ const renderRobot = () => {
   if (!robot) {
     robot = document.createElement("img");
     robot.alt = "game-cell-robot";
-    robot.src = "https://i.ibb.co/FVvvvdh/robot.png";
+    robot.src = "images/robot.png";
     robot.classList.add("robot-image");
     robot.id = "robot";
     document.getElementById("grid").appendChild(robot);
