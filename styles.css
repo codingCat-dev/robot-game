@@ -1,0 +1,159 @@
+
+:root {
+    --black: #222222;
+    --desert: #efeae5;
+  --grayLight: #a6b8ba;
+  --grayDark: #82999e;
+  --green: #00FF00;
+  --orange: #e15a1e;
+  --orangeDark: #ac3a07;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body,
+html {
+  background-color: #efeae5;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black);
+
+  text-align: center;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+button {
+  height: 46px;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--orange);
+  color: white;
+  border: 1px solid var(--orangeDark);
+  transition: color 0.3s;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button:hover {
+  background-color: var(--orangeDark);
+}
+
+button.active{
+    background-color: var(--orangeDark);
+}
+
+button:focus{
+    outline: none;
+}
+
+button:disabled {
+  background-color: var(--grayLight);
+  color: var(--grayDark);
+  cursor: not-allowed;
+}
+
+.app {
+  width: 100%;
+  padding: 20px;
+}
+
+.objective {
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.game-controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+#battery-level.orange {
+  background-color: #ff6600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(50px, 1fr));
+  grid-template-rows: repeat(5, minmax(50px, 1fr));
+  gap: 10px;
+}
+
+.cell {
+  background-color: var(--grayLight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+}
+
+.robot-image {
+  width: 45px;
+  height: 45px;
+}
+
+.power-up {
+  width: 30px;
+  height: 15px;
+  position: absolute;
+  border: 1px solid var(--black);
+  background-color: var(--green);
+  border-radius: 4px;
+}
+

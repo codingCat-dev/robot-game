@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robowl</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <h2 class="objective">
+        Navigate the robot around, collect power-ups, and manage your battery
+        level to keep moving
+      </h2>
+      <div class="game-container">
+        <p><span>Battery level:</span> <span id="battery-level"></span></p>
+        <h4>
+          <span>Power up:</span>
+          <span id="power-up-message"
+            >Navigate the robot around, collect power-ups, and manage your
+            battery level to keep moving</span
+          >
+        </h4>
+        <div class="grid-container">
+          <div id="grid" class="grid"></div>
+          <div class="game-controls">
+            <button id="button-left">⬅️ Rotate</button>
+            <button id="button-forward">⬆️ Forward</button>
+            <button id="button-right">➡️ Rotate</button>
+          </div>
+        </div>
+        <div style="margin-top: 30px;"></div>
+          <div id="game-message"></div>
+          <button style="margin-top: 10px; display: none;" id="reset-game-button">Reset game</button>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
